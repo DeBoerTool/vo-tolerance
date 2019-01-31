@@ -1,0 +1,35 @@
+{
+  "name": "@deboertool/vo-tolerance",
+  "version": "0.0.1",
+  "description": "A value object for a tolerance",
+  "main": "index.ts",
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run test",
+    "test": "mocha-webpack --webpack-config webpack.config.js ./test/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeBoerTool/vo-tolerance.git"
+  },
+  "author": "Daniel S. Deboer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeBoerTool/vo-tolerance/issues"
+  },
+  "homepage": "https://github.com/DeBoerTool/vo-tolerance#readme",
+  "dependencies": {
+    "@deboertool/vo-measurement": "^0.2.2",
+    "@deboertool/vo-unit": "0.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0"
+  }
+}
