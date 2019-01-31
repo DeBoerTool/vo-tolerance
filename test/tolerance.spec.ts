@@ -5,7 +5,7 @@ import Tolerance from '../src/Tolerance'
 
 const positiveValue = 99.99
 const negativeValue = -84
-const positiveVo = new Tolerance(positiveValue, new Precision(2), new Factory().make('mm'))
+const positiveVo = new Tolerance(positiveValue, new Precision(2), new Factory().make('in'))
 const negativeVo = new Tolerance(negativeValue, new Precision(2), new Factory().make('mm'))
 
 describe('Tolerance', () => {
@@ -26,6 +26,17 @@ describe('Tolerance', () => {
   
     it(
       'returns the signed value as a string',
-      () => expect(negativeVo.signed()).to.equal('-84mm')
+      () => {
+        expect(negativeVo.signed()).to.equal('-84')
+        expect(positiveVo.signed()).to.equal('+99.99')
+      }
+    )
+
+    it(
+      'returns a fully formatted string with units',
+      () => {
+        expect(positiveVo.toString()).to.equal('+99.99"')
+        expect(positiveVo.toString()).to.equal('-84mm')
+      }
     )
 })

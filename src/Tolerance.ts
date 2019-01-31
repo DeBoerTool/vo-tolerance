@@ -14,6 +14,6 @@ export default class Tolerance extends Measurement
 
   public toString (): string 
   {
-    return this.signed() + this._units.value()
+    return this.signed() + this._units.symbol()
   }
 }

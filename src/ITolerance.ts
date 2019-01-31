@@ -1,4 +1,5 @@
-export default interface ITolerance {
+export default interface ITolerance 
+{
   sign (): string
   signed (): string
   toString (): string

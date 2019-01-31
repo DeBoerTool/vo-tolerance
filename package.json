@@ -20,7 +20,7 @@
   "homepage": "https://github.com/DeBoerTool/vo-tolerance#readme",
   "dependencies": {
     "@deboertool/vo-measurement": "^0.2.2",
-    "@deboertool/vo-unit": "0.0.3"
+    "@deboertool/vo-unit": "^0.1.0"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
