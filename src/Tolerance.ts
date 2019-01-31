@@ -1,15 +1,19 @@
 import Measurement from '@deboertool/vo-measurement'
 
-export default class Tolerance extends Measurement {
-  public sign (): string {
+export default class Tolerance extends Measurement 
+{
+  public sign (): string 
+  {
     return Math.sign(this.value()) >= 0 ? '+' : ''
   }
 
-  public signed (): string {
-    return String(
-      this.sign() + this.value()
-    )
+  public signed (): string 
+  {
+    return this.sign() + String(this.value())
   }
 
-  public git push -u origin master
+  public toString (): string 
+  {
+    return this.signed() + this._units.value()
+  }
 }
