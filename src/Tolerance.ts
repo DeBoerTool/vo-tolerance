@@ -11,5 +11,5 @@ export default class Tolerance extends Measurement {
     )
   }
 
-  public 
+  public git push -u origin master
 }
