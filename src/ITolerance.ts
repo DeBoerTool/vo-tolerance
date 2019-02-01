@@ -1,4 +1,6 @@
-export default interface ITolerance 
+import { IMeasurement } from '@deboertool/vo-measurement'
+
+export default interface ITolerance extends IMeasurement
 {
   sign (): string
   signed (): string

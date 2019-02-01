@@ -1,6 +1,7 @@
 import Measurement from '@deboertool/vo-measurement'
+import ITolerance from './ITolerance'
 
-export default class Tolerance extends Measurement 
+export default class Tolerance extends Measurement implements ITolerance
 {
   public sign (): string 
   {
