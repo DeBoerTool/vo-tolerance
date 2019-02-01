@@ -1,6 +1,6 @@
 import { Precision, IPrecision } from '@deboertool/vo-precision'
 import { Unit, IUnit } from '@deboertool/vo-unit'
-import { IMeasurement } from '@deboertool/vo-measurement'
+import { IMeasurement, ValueRange } from '@deboertool/vo-measurement'
 import ITolerance from './ITolerance'
 
 export default class EmptyTolerance implements ITolerance
@@ -66,7 +66,7 @@ export default class EmptyTolerance implements ITolerance
     return this
   }
 
-  isInRange (range): boolean
+  isInRange (range: ValueRange): boolean
   {
     return false
   }
