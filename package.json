@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/DeBoerTool/vo-tolerance#readme",
   "dependencies": {
-    "@deboertool/vo-measurement": "^0.3.1"
+    "@deboertool/vo-measurement": "^0.5.3"
   },
   "devDependencies": {
-    "@deboertool/vo-precision": "0.0.1",
+    "@deboertool/vo-precision": "^0.1.0",
     "@deboertool/vo-unit": "^0.1.2",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
@@ -30,7 +30,9 @@
     "mocha": "^5.2.0",
     "mocha-webpack": "^2.0.0-beta.0",
     "ts-loader": "^5.3.3",
-    "typescript": "^3.3.1",
     "webpack": "^4.29.0"
+  },
+  "peerDependencies": {
+    "typescript": "^3.3.1"
   }
 }

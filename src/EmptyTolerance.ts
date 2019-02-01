@@ -1,8 +1,40 @@
+import { Precision, IPrecision } from '@deboertool/vo-precision'
+import { Unit, IUnit } from '@deboertool/vo-unit'
+import { IMeasurement } from '@deboertool/vo-measurement'
 import ITolerance from './ITolerance'
-import { IMeasurement } from '@deboertool/vo-measurement';
 
 export default class EmptyTolerance implements ITolerance
 {
+  isGreaterThan(comparison: number | IMeasurement): boolean {
+    return false
+  }
+
+  isGreaterThanOrEqualTo(comparison: number | IMeasurement): boolean {
+    return false
+  }
+
+  isEqualTo(comparison: number | IMeasurement): boolean {
+    return false
+  }
+
+  isLessThan(comparison: number | IMeasurement): boolean {
+    return false
+  }
+
+  isLessThanOrEqualTo(comparison: number): boolean {
+    return false
+  }
+
+  precision (): IPrecision 
+  {
+    return new Precision(0)
+  }
+
+  unit (): IUnit
+  {
+    return new Unit('none', 'No Units', '')
+  }
+
   sign (): string {
     return ''
   }  

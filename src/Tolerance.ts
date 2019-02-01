@@ -15,6 +15,6 @@ export default class Tolerance extends Measurement implements ITolerance
 
   public toString (): string 
   {
-    return this.signed() + this._units.symbol()
+    return this.signed() + this._unit.symbol()
   }
 }
