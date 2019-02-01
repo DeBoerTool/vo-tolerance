@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import Empty from '../src/EmptyTolerance'
+import { EmptyTolerance as Empty } from '../'
 
 const vo = new Empty()
 
