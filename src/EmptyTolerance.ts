@@ -65,4 +65,9 @@ export default class EmptyTolerance implements ITolerance
   {
     return this
   }
+
+  isInRange (range): boolean
+  {
+    return false
+  }
 }

@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/DeBoerTool/vo-tolerance#readme",
   "dependencies": {
-    "@deboertool/vo-measurement": "^0.5.3"
+    "@deboertool/vo-measurement": "^0.5.5"
   },
   "devDependencies": {
     "@deboertool/vo-precision": "^0.1.0",
