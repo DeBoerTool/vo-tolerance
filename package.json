@@ -1,6 +1,6 @@
 {
   "name": "@deboertool/vo-tolerance",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A value object for a tolerance",
   "main": "index.ts",
   "scripts": {
