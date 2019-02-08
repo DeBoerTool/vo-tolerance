@@ -66,6 +66,11 @@ export default class EmptyTolerance implements ITolerance
     return this
   }
 
+  plus (value: number): IMeasurement
+  {
+    return this
+  }
+
   isInRange (range: ValueRange): boolean
   {
     return false
